@@ -1,5 +1,5 @@
 {
-  "name": "generator-monorepo",
+  "name": "@jswork/generator-monorepo",
   "version": "1.0.0",
   "description": "generator-monorepo-description",
   "homepage": "https://github.com/afeiship/generator-monorepo",
