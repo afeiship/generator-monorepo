@@ -1,5 +1,5 @@
 {
-  "name": "@boilerplate-scope/boilerplate-monorepo",
+  "name": "@<%= scope %>/<%= project_name %>",
   "private": true,
   "workspaces": {
     "packages": [
@@ -17,10 +17,9 @@
     "build": "lerna run build --since master --no-private",
     "publish": "npm run build && lerna publish --no-private"
   },
-  "boilerplate": "boilerplate-monorepo",
   "homepage": "https://js.work",
   "repository": {
     "type": "git",
-    "url": "https://github.com/afeiship/boilerplate-monorepo.git"
+    "url": "https://github.com/afeiship/<%= project_name %>.git"
   }
 }

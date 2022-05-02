@@ -1,2 +1,2 @@
-# boilerplate-monorepo
-> boilerplate-monorepo-description
+# <%= project_name %>
+> <%= description %>
