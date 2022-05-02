@@ -8,6 +8,7 @@ module.exports = (inEnv) => {
     entry: './public/index.js',
     stats: 'errors-only',
     resolve: {
+      extensions: ['.tsx', '.ts', '.js'],
       alias: {
         root: resolve(__dirname, '..'),
         '@': resolve(__dirname, '..', 'src'),
@@ -20,6 +21,11 @@ module.exports = (inEnv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: ['babel-loader']
+        },
+        {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/
         },
         {
           test: /\.snippet$/,

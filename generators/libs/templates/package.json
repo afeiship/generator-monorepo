@@ -1,12 +1,8 @@
 {
   "name": "@<%= scope %>/<%= project_name %>",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "<%= description %>",
   "homepage": "https://github.com/afeiship/<%= project_name %>",
-  "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
-  },
   "keywords": [
     "react",
     "photon",
@@ -74,6 +70,8 @@
     "react-router-dom": "^5.1.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
