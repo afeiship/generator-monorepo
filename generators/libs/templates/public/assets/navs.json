@@ -1,0 +1,12 @@
+[
+  {
+    "type": "title",
+    "label": "Guide"
+  },
+  {
+    "type": "nav-link",
+    "icon": "note-beamed",
+    "label": "button",
+    "to": "/button"
+  }
+]
