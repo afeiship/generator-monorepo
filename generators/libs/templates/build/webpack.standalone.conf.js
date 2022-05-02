@@ -7,14 +7,14 @@ module.exports = (inEnv) => {
     mode: 'production',
     entry: './src/index.js',
     output: {
-      filename: 'react-photon.js',
-      library: 'ReactPhoton',
+      filename: '<%= project_name %>.js',
+      library: '<%- ctx.camelize(project_name) %>',
       libraryTarget: 'umd'
     },
     externals: {
       classnames: 'classnames',
       react: 'react',
-      'react-is':'react-is',
+      'react-is': 'react-is',
       'react-dom': 'react-dom',
       '@jswork/noop': '@jswork/noop',
       'object-assign': 'object-assign',

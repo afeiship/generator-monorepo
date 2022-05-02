@@ -36,7 +36,7 @@ export default class extends React.Component {
       <div className="example-component-window">
         <ReactFullImage src="//img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg" />
         <Window className="webkit-sassui-animate-float">
-          <ToolbarHeader title="react-photon" />
+          <ToolbarHeader title="<%= project_name %>" />
           <WindowContent>
             <PaneGroup>
               <Router>

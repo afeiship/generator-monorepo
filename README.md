@@ -10,4 +10,5 @@ cd generator-monorepo && npm link
 ## usage
 ```shell
 yo @jswork/monorepo
+yo @jswork/monorepo:libs
 ```

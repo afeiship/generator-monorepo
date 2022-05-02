@@ -1,15 +1,12 @@
-# react-photon
+# <%= project_name %>
 > Photon components built with React.
 
-## thanks to
-[@frostney](https://github.com/frostney) Add me to the developer of `react-photon`.
-
 ## preview
-- https://afeiship.github.io/react-photon/
+- https://afeiship.github.io/<%= project_name %>/
 
 ## installation
 ```shell
-npm i -S react-photon
+npm i -S <%= scope %>/<%= project_name %>
 ```
 
 ## dynamic import
@@ -25,12 +22,7 @@ npm i -S react-photon
     "presets": ["@babel/preset-env", "@babel/react"],
     "plugins": [
       // ....
-      [ "import", { "libraryName": "react-photon", "libraryDirectory": "dist/lib" } ]
+      [ "import", { "libraryName": "<%= project_name %>", "libraryDirectory": "dist/lib" } ]
     ]
   }
   ```
-
-## resources
-- http://photonkit.com/
-- https://www.robinwieruch.de/minimal-react-webpack-babel-setup
-- https://vuikit.js.org/guide/introduction
