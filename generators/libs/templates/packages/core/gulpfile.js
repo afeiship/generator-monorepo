@@ -9,5 +9,8 @@
     require('./build/' + file);
   });
 
-  gulp.task('default', gulp.series(['clean', 'scripts:cjs', 'scripts:esm',]));
+  const seriesTasks = gulp.series(['clean', 'scripts:cjs', 'scripts:esm']);
+
+  gulp.task('default', seriesTasks);
+  gulp.task('watch', () => gulp.watch(['./src/lib/**'], seriesTasks));
 })();

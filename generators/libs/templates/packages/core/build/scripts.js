@@ -1,13 +1,13 @@
-(function () {
+(function() {
   'use strict';
 
   const gulp = require('gulp');
-  const $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*']
-  });
   const tsconfig = require('../tsconfig.json');
+  const $ = require('gulp-load-plugins')({
+    pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*'],
+  });
 
-  gulp.task('scripts:cjs', function () {
+  gulp.task('scripts:cjs', function() {
     return gulp
       .src('src/**/*.ts')
       .pipe($.replace('export default ', 'export = '))
@@ -17,7 +17,7 @@
       .pipe($.size({ title: '[ minimize size ]:' }));
   });
 
-  gulp.task('scripts:esm', function () {
+  gulp.task('scripts:esm', function() {
     return gulp
       .src('src/**/*.ts')
       .pipe($.jswork.pkgHeader())
