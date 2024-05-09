@@ -6,9 +6,6 @@
       "packages/*"
     ]
   },
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
   "scripts": {
     "start": "yarn --cwd packages/websites start",
     "lerna:clean": "lerna clean",
@@ -18,9 +15,5 @@
     "build:all": "lerna run build",
     "publish": "npm run build && lerna publish --no-private"
   },
-  "homepage": "https://js.work",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/afeiship/<%= project_name %>.git"
-  }
+  "homepage": "https://js.work"
 }
